@@ -116,3 +116,10 @@ footer {
     color: #aaaaaa;
 }
 
+h1, h2 {
+    color: gold;
+}
+
+nav a:hover {
+    color: gold;
+}
