@@ -137,3 +137,8 @@ nav {
     padding: 20px;
     z-index: 1000;
 }
+
+h3 {
+    font-size: 32px;
+    margin-top: 20px;
+}
