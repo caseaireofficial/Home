@@ -252,3 +252,49 @@ nav a {
   font-size: 16px;
   padding: 10px;
 }
+
+.gucci-section{
+    display:flex;
+    justify-content:center;
+    padding:40px 20px;
+}
+
+.gucci-section .product-card{
+    max-width:350px;
+    width:100%;
+    text-align:center;
+}
+
+.gucci-section img{
+    width:100%;
+    max-width:220px;
+    display:block;
+    margin:15px auto;
+    border-radius:12px;
+}
+
+#contact,
+#about,
+.about{
+    text-align:center;
+    padding:20px;
+}
+
+#products > p,
+#contact p{
+    max-width:500px;
+    margin:10px auto;
+    line-height:1.6;
+}
+
+.products{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+}
+
+.product-card{
+    width:90%;
+    max-width:320px;
+}
