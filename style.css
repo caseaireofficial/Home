@@ -254,3 +254,12 @@ nav a {
     gap:10px;
     overflow-x:auto;
 }
+
+.featured-videos video{
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 20px auto;
+}
