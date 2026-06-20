@@ -1,5 +1,4 @@
 let cart = [];
-let total = 0;
 
 function toggleCart(){
     document
@@ -56,8 +55,13 @@ function checkoutWhatsApp(){
     cart.forEach(item=>{
         message += `${item.name} - ₹${item.price}\n`;
     });
+    
+    let total = cart.reduce(
+(itemTotal, item) => itemTotal + item.price,
+0
+);
 
-    message += `\nTotal: ₹${total}`;
+message += `\nTotal: ₹${total}`;
 
     window.open(
         `https://wa.me/919272396326?text=${encodeURIComponent(message)}`
