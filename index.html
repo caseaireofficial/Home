@@ -5,17 +5,32 @@
         
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Shop premium luxury phone cases, Apple iPhone cases, wrist straps and accessories at CASEAIRE. Stylish designs and affordable luxury.">
         
-        <title>CASEAIRE</title>
+        <title>CASEAIRE | Premium Luxury Phone Cases & Accessories</title>
         
         <link rel="stylesheet" href="style.css">
-    
+        
     </head>
     
     <body>
         
-        <div class="cart-icon">
+        <div class="cart-icon" onclick="toggleCart()">
             🛒 <span id="cart-count">0</span>
+            </div>
+        
+        <div id="cart-sidebar" class="cart-sidebar">
+            
+            <h2>Your Cart</h2>
+            
+            <div id="cart-items"></div>
+            
+            <h3>Total: ₹<span id="cart-total">0</span></h3>
+            
+            <button onclick="checkoutWhatsApp()">
+                Checkout
+                </button>
+            
         </div>
         
         <nav>
@@ -28,22 +43,18 @@
         
         <section class="hero" id="home">
             
-            <img src="images/Logo.jpeg" alt="CASEAIRE Logo">
+            <img src="Images/Logo.jpeg" alt="CASEAIRE Logo">
             
             <h1>CASEAIRE</h1>
             
             <p>Premium Cases For Every Style</p>
             
             <a href="https://wa.me/919272396326">
-                
                 <button>Shop Now</button>
-            
             </a>
             
             <a href="https://www.instagram.com/caseaire.official/" target="_blank">
-                
                 <button>Instagram</button>
-            
             </a>
         
         </section>
@@ -53,56 +64,57 @@
             <h2>New Arrivals</h2>
             
             <div class="products">
+
+            <div class="product-card">
+
+            <img src="Images/Accesorries (1).jpeg">
+                                
+            <h3>Midnight Charm Wrist Strap</h3>
+                                
+            <p>₹499</p>
+            <p>Luxury black beaded phone charm with premium detailing.</p>
+                                
+            <button onclick="addToCart('Midnight Charm Wrist Strap',499,'Images/Accesorries (1).jpeg')">
+                Add To Cart
+            </button>
+            
+            </div>
+                
                 <div class="product-card">
                     
-                    <img src="images/Accesorries (1).jpeg" alt="Midnight Charm Wrist Strap">
-                    
-                    <h3>Midnight Charm Wrist Strap</h3>
-                    
-                    <p>₹499</p>
-                    <p>Luxury black beaded phone charm with premium detailing.</p>
-                    
-                    <button onclick="addToCart('Midnight Charm Wrist Strap',499)">
-                        Add To Cart 
-                    </button>
-                
-                </div>
-                
-                <div class="product-card">
-                    
-                    <img src="images/Accesorries (2).jpeg">
+                    <img src="Images/Accesorries (2).jpeg">
                     
                     <h3>Cocoa Bear Wrist Strap</h3>
-                    
+                                
                     <p>₹499</p>
                     <p>Stylish handcrafted wrist strap with cute bear detailing.</p>
-                    
-                    <button onclick="addToCart('Cocoa Bear Wrist Strap',499)">
+                                
+                    <button onclick="addToCart('Cocoa Bear Wrist Strap',499,'Images/Accesorries (2).jpeg')">
                         Add To Cart
                     </button>
                     
                 </div>
                 
                 <div class="product-card">
-                    
-                    <img src="images/Accesorries (3).jpeg">
-                    
+                    <img src="Images/Accesorries (3).jpeg">
+                               
                     <h3>Leopard Luxe Wrist Strap</h3>
-                    
+                                
                     <p>₹549</p>
                     <p>Premium monochrome charm strap with statement design.</p>
-                    
-                    <button onclick="addToCart('Leopard Luxe Wrist Strap',499)">
+                                
+                    <button onclick="addToCart('Leopard Luxe Wrist Strap',499,'Images/Accesorries (3).jpeg')">
                         Add To Cart
                     </button>
                 
                 </div>
+            
             </div>
         
         </section>
         
         <section id="products">
-             
+            
             <h2>Featured Product</h2>
             
             <div class="featured-product">
@@ -114,7 +126,7 @@
                 <p>₹999</p>
                 <p>Desert Tan wrapped in a buttery-smooth finish</p>
                 
-                <button onclick="addToCart('Dessert Tan Magsafe Case',499)">
+                <button onclick="addToCart('Dessert Tan Magsafe Case',999,'Images/Dessert Tan Magsafe Case.jpg')">
                     Add To Cart
                 </button>
                 
@@ -122,54 +134,42 @@
             
             <div class="featured-product">
                 
-                <img src="images/Premium jute.jpg" alt="Premium Jute Case">
+                <img src="Images/Premium jute.jpg" alt="Premium Jute Case">
                 
                 <h2>Premium Jute Case</h2>
                 
                 <p>₹999</p>
-                
                 <p>Premium jute material with the Matte Textured finish.</p>
                 <p>Styled with Mandala Art Patterns for a unique and elegant look.</p>
                 
-                <button onclick="addToCart('Premium Jute Case',499)">
+                <button onclick="addToCart('Premium Jute Case',999,'Images/Premium jute.jpg')">
                     Add To Cart
                 </button>
                 
             </div>
-
             
             <div class="featured-product">
                 
-                <img src="images/APPLE 16 Pro (1).jpeg" alt="Luxury Monochrome Case">
-                <img src="images/APPLE 16 Pro (2).jpeg" alt="Luxury Monochrome Case">
-                
+                <img src="Images/APPLE 16 Pro (1).jpeg" alt="Luxury Monochrome Case">
+                <img src="Images/APPLE 16 Pro (2).jpeg" alt="Luxury Monochrome Case">
+                            
                 <h2>Luxury Monochrome Case</h2>
-                
+                            
                 <p>₹999</p>
-                <p>Sleek monochrome design with a premium metallic finish. Built for style and protection with a luxury-inspired aesthetic.</p>
+                <p>Sleek monochrome design with a premium metallic finish.</p>
+                <p> for style and protection with a luxury-inspired aesthetic.</p>
                 
-                <button onclick="addToCart('Luxury Monochrome Case',499)">
-                        Add To Cart
-                    </button>
-                
-            </div>
+                <button onclick="addToCart('Luxury Monochrome Case',499,'Images/APPLE 16 Pro (1).jpeg')">
+                    Add To Cart
+                </button>
             
+            </div>
+        
         </section>
         
         <section class="featured-videos">
             
             <h2>See It In Action</h2>
-            
-            <video
-                autoplay
-                muted
-                loop
-                playsinline
-                preload="auto">
-                
-                <source src="videos/Case 1 (1).mp4" type="video/mp4">
-            
-            </video>
             
             <video 
                 autoplay
@@ -177,65 +177,79 @@
                 loop
                 playsinline
                 preload="auto">
-                
-                <source src="videos/Case 3 (1).mp4" type="video/mp4">
-            
+                <source src="Videos/Case 1 (1).mp4" type="video/mp4">
             </video>
             
+            <video
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto">
+                <source src="Videos/Case 3 (1).mp4" type="video/mp4">
+            </video>
+        
         </section>
         
         <section class="gucci-section">
-            
             <div class="product-card">
+            
                 <div class="gucci-gallery">
-                    
-                    <img src="images/case1.jpeg">
-                    <img src="images/case2.jpeg">
-                    <img src="images/case3.jpeg">
-                
+                            
+            <img src="Images/Case 1.jpeg" alt="Luxury Gucci Wallet Phone Case">
+            <img src="Images/Case 2.jpeg" alt="Gucci Phone Case">
+            <img src="Images/Case 3.jpeg" alt="Gucci Wallet Case">
                 </div>
                 
                 <h3>Gucci Wallet Case</h3>
                 
                 <p>₹1499</p>
-                <p>Your search for the perfect piece ends here.</p>
-                <p>Flat 10% OFF on your first order💯</p>
+                <p>Premium luxury wallet case with card slots and premium finish.</p>
                 
-                  <button onclick="addToCart('Gucci Wallet Case',499)">
-                        Add To Cart
-                  </button>
+                <button onclick="addToCart('Gucci Wallet Case',1499,'Images/Case 1.jpeg')">
+                    Add To Cart
+                </button>
+                
+                <p>🚚 Fast Shipping | 💵 Cash On Delivery | 🔒 Secure Checkout</p>
             
-            </div>
-        
-        </section>
-        
-        <h2>About CASEAIRE</h2>
-        
-        <p> CASEAIRE offers premium phone cases designed for style, protection, and everyday convenience. Our goal is to bring luxury-inspired designs at affordable prices.</p>
+             </div>
+                        
+                        </section>
+                        
+                        <h2>About CASEAIRE</h2>
+                        <p> CASEAIRE offers premium phone cases designed for style, protection, and everyday convenience. Our goal is to bring luxury-inspired designs at affordable prices.</p>
+                        
+                        <h2>Why Choose CASEAIRE?</h2>
+                        <p>✓ Customer Support</p>
+                        <p>✓ Premium Quality</p>
+                        <p>✓ Affordable Luxury</p>
+                        
+                        <section id="cart">
+                            
+                            <h2>Shopping Cart</h2>
+                            
+                            <div id="cart-items"></div>
+                            
+                            <h3>Total: ₹<span id="cart-total">0</span></h3>
+                            
+                            <button onclick="checkoutWhatsApp()">
+                                Buy Now
+                            </button>
 
-        <h2>Why Choose CASEAIRE?</h2>
-
-        <p>✓ Premium Quality</p>
-        <p> Every Caseaire order comes with a complimentary surprise😍</p>
-        <p>✓ Affordable Luxury</p>
-        <p>  Shop now & experience a little extra luxury.</p>
-        <p> DM us to get this luxury phone case🥰🙈</p>
-        
-        <section id="contact">
-            
-            <h2>Contact Us</h2>
-            
-            <p>📸 Instagram:<a href="https://www.instagram.com/caseaire.official/" target="_blank">@caseaire.official</a></p>
-            <p>💬 WhatsApp:<a href="https://wa.me/919272396326" target="_blank">+91 92723 96326</a></p>
-            
-            <footer>
-                <p>© 2025 CASEAIRE. All Rights Reserved.</p>
-            </footer>
-        
-        </section>
-        
-        <script src="script.js"></script>
-    
-    </body>
-
-</html>
+                        </section>
+                        
+                        <section id="contact">
+                            <h2>Contact Us</h2>
+                            <p>📸 Instagram:<a href="https://www.instagram.com/caseaire.official/" target="_blank">@caseaire.official
+                            </a>
+                            </p>
+                            <p>💬 WhatsApp:<a href="https://wa.me/919272396326" target="_blank">+91 92723 96326
+                            </a>
+                            </p>
+                            <footer>
+                                <p>© 2025 CASEAIRE. All Rights Reserved.</p>
+                            </footer>
+                        </section>
+                <script src="script.js"></script>
+            </body>
+    </html>
